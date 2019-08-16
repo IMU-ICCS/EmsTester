@@ -1,0 +1,21 @@
+
+#server.port = 8080
+additional
+  ports = 8088,8092
+
+https
+  enabled = true
+  keystore
+    file = keystore.jks
+    password = melodic
+  truststore
+    file = truststore.jks
+    password = melodic
+  key
+    alias = tester
+
+ems
+  base-url = http://localhost:8081
+  truststore
+    file = truststore.jks
+    password = melodic
